@@ -5,7 +5,7 @@ on:
   workflow_dispatch:  # 也支持手动触发
   # 定时触发
   schedule:
-    - cron: "0 17 * * *"
+    - cron: "45 10 * * *"
 
 jobs:
   bgm-sync:
