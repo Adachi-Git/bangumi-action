@@ -78,6 +78,7 @@ const loadCharacter = async (userId) => {
 
 const downloadImage = async (url) => {
     console.log(`download image: ${url}`);
+    console.log("提取的标签：", [...totalTags]);
 
     return await client.get(url, headers)
         .then(res => res.readBodyBuffer())
@@ -50982,7 +50983,6 @@ async function generateBgmImage(userId) {
 
     const tempHtml = tmpl.temp;
     const animeTempHtml = tmpl.anime;
-    console.log("提取的标签：", [...totalTags]);
 
     let characters = await bgm.loadCharacter(userId);
 
