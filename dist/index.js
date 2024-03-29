@@ -76,7 +76,7 @@ const loadCharacter = async (userId) => {
         });
 };
 
-const downloadImage = async (url) => {
+const downloadImage = async (url, totalTags) => {
     console.log(`download image: ${url}`);
     console.log("提取的标签：", [...totalTags]);
 
