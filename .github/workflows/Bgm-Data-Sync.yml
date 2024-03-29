@@ -1,9 +1,11 @@
 name: Bgm-Data-Sync
+
 on:
-  # 每日零点执行（这个配置最小间隔5分钟）
+  # 触发条件设置：手动触发和定时触发
+  workflow_dispatch:  # 也支持手动触发
+  # 定时触发设置为每周一凌晨四点
   schedule:
-    - cron: "15 * * * *"  # 手动触发
-  workflow_dispatch:
+    - cron: "34 * * * *"
 
 jobs:
   bgm-sync:
