@@ -50982,6 +50982,7 @@ async function generateBgmImage(userId) {
 
     const tempHtml = tmpl.temp;
     const animeTempHtml = tmpl.anime;
+    console.log("提取的标签：", [...totalTags]);
 
     let characters = await bgm.loadCharacter(userId);
 
